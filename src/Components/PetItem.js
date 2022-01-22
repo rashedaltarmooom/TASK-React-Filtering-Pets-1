@@ -9,7 +9,7 @@ export default function PetItem({ pet, adoptPet }) {
   return (
     <div class="col-lg-4 col-md-8 col-sm-10">
       <div class="single-doctor">
-        <img className="image ratio" alt={pet.name} src={petImage} />
+        <img className="image ratio pet" alt={pet.name} src={petImage} />
         <div class="content">
           <h3>{pet.name}</h3>
           <button
