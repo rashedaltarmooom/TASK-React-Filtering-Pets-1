@@ -13,7 +13,7 @@ function PetsList() {
   const petList = pets
     .filter(
       (pet) =>
-        pet.name.toLowerCase().includes(Query.toLocaleLowerCase()) &&
+        pet.name.toLowerCase().includes(Query.toLowerCase()) &&
         pet.type.includes(type)
     )
     .map((pet) => <PetItem pet={pet} key={pet.id} handleadopt={handleadopt} />);
